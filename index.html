@@ -113,6 +113,29 @@
 <body>
 
 <!-- HERO -->
+ <section>
+  <h2>Ton profil sportif</h2>
+
+  <div class="card">
+    <p>Choisis ton niveau :</p>
+    <select id="level" style="width:100%; padding:10px; margin-top:10px;">
+      <option>Débutant</option>
+      <option>Intermédiaire</option>
+      <option>Avancé</option>
+    </select>
+
+    <p style="margin-top:10px;">Objectif :</p>
+    <select id="goal" style="width:100%; padding:10px; margin-top:10px;">
+      <option>Performance</option>
+      <option>Perte de poids</option>
+      <option>Endurance</option>
+    </select>
+
+    <button onclick="generatePlan()">Générer mon programme</button>
+
+    <p id="plan" style="margin-top:10px; color:#aaa;"></p>
+  </div>
+</section>
 <div class="hero">
   <h1>BASKET <span>PERFORMANCE</span></h1>
   <p>
@@ -213,6 +236,27 @@
 </footer>
 
 <script>
+    function generatePlan() {
+  const level = document.getElementById("level").value;
+  const goal = document.getElementById("goal").value;
+
+  let plan = "";
+
+  if (level === "Débutant") {
+    plan = "3 séances/semaine + focus technique et endurance légère.";
+  }
+
+  if (level === "Intermédiaire") {
+    plan = "4 séances/semaine + intensité modérée + travail physique.";
+  }
+
+  if (level === "Avancé") {
+    plan = "5 à 6 séances/semaine + haute intensité + explosivité.";
+  }
+
+  document.getElementById("plan").innerText =
+    "Programme conseillé : " + plan + " Objectif : " + goal;
+}
 let interval;
 
 function startWorkout(name, minutes) {
@@ -239,6 +283,16 @@ function startWorkout(name, minutes) {
   }, 1000);
 }
 </script>
+<section>
+  <h2>Programme hebdomadaire</h2>
+
+  <div class="card">
+    <p><b>Lundi :</b> Explosivité + jambes</p>
+    <p><b>Mercredi :</b> Dribble + cardio</p>
+    <p><b>Vendredi :</b> Vitesse + agilité</p>
+    <p><b>Week-end :</b> Match ou récupération active</p>
+  </div>
+</section>
 
 </body>
 </html>
