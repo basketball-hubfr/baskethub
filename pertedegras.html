@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8" />
@@ -23,7 +23,7 @@ body{
 
 /* HERO */
 .hero{
-  height:100vh;
+  min-height:100vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -34,7 +34,7 @@ body{
 }
 
 .hero h1{
-  font-size:64px;
+  font-size:clamp(32px, 6vw, 64px);
   font-weight:800;
 }
 
@@ -49,7 +49,18 @@ body{
   line-height:1.6;
 }
 
-/* BLOCS BLEUS */
+button{
+  margin-top:25px;
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  background:#ff6b00;
+  font-weight:700;
+  cursor:pointer;
+  color:white;
+}
+
+/* CONTENU */
 .container{
   max-width:1000px;
   margin:auto;
@@ -59,117 +70,130 @@ body{
   gap:20px;
 }
 
+/* BOX */
 .box{
   background:#1a2235;
   border:1px solid #2a3550;
   border-radius:14px;
   padding:25px;
-  min-height:140px;
 }
 
+/* BOX AVEC IMAGE */
+.box-flex{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* TEXTE */
+.box-flex div{
+  flex:1;
+}
+
+/* IMAGE RESPONSIVE (IMPORTANT) */
+.box-flex img{
+  width:100%;
+  max-width:420px;
+  height:auto;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+/* TITRES */
 .box h3{
   color:#ff6b00;
   margin-bottom:10px;
 }
 
-/* BUTTON */
-button{
-  margin-top:20px;
-  padding:12px 20px;
-  border:none;
-  border-radius:10px;
-  background:#ff6b00;
-  font-weight:700;
-  cursor:pointer;
+/* MOBILE */
+@media (max-width:768px){
+
+  .box-flex{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .box-flex img{
+    max-width:100%;
+    width:100%;
+  }
 }
 
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1588147138636256"
-crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
 <!-- HERO -->
 <div class="hero">
+  <h1>PERTE DE <span>GRAS</span></h1>
 
-<h1 style="font-size:clamp(32px, 8vw, 64px);">
-  PERTE DE <span style="color:#ff6b00;">GRAS</span>
-</h1>
+  <p>
+    Conseils simples et efficaces pour perdre du gras durablement.
+  </p>
 
-<p>
-Conseils pour une perte de gras efficace
-</p>
-
-<button onclick="window.location.href='index.html'">
-Retour au site
-</button>
-
+  <button onclick="window.location.href='index.html'">
+    Retour au site
+  </button>
 </div>
-<div class="box" style="max-width:1000px; margin:auto; display:flex; align-items:center; gap:20px;">
 
-  <!-- TEXTE -->
-  <div style="flex:1;">
-    <h3>commencer votre perte de gras</h3>
+<!-- CONTENU -->
+<div class="container">
+
+  <!-- INTRO AVEC IMAGE -->
+  <div class="box box-flex">
+
+    <div>
+      <h3>Commencer ta perte de gras</h3>
+      <p>
+        Pour perdre du gras efficacement, il faut combiner alimentation équilibrée et activité physique régulière.
+        L’objectif est de créer de bonnes habitudes sur le long terme, pas de faire un régime extrême.
+      </p>
+    </div>
+
+    <img src="6e2a5bb4-75bc-4156-a5e8-7b3fe09d19d3.png" alt="fitness">
+  </div>
+
+  <div class="box">
+    <h3>Déficit calorique</h3>
     <p>
-      si vous voulez perdre du gras,
-       il est important de suivre une alimentation équilibrée et de pratiquer une activité physique régulière.
-        Voici quelques conseils pour vous aider à atteindre votre objectif de perte de gras.
+      La perte de gras commence par le déficit calorique : consommer moins de calories que ce que tu dépenses.
+      Choisis des aliments sains et reste actif (marche, sport, etc.).
     </p>
   </div>
 
-  <!-- IMAGE -->
-  <img src="6e2a5bb4-75bc-4156-a5e8-7b3fe09d19d3.png"
-       alt="Image basket"
-       style="width:480px; height:auto; border-radius:12px;">
+  <div class="box">
+    <h3>Meilleurs sports pour brûler des calories</h3>
+    <p>
+      Footing, vélo, natation, corde à sauter et marche rapide sont les plus efficaces.
+      Le plus important est la régularité et l’intensité modérée.
+    </p>
+  </div>
 
-</div>
+  <div class="box">
+    <h3>Exemple de semaine</h3>
+    <ul>
+      <li>Lundi : footing</li>
+      <li>Mardi : marche 30-60 min</li>
+      <li>Mercredi : vélo ou footing</li>
+      <li>Jeudi : repos actif</li>
+      <li>Vendredi : footing</li>
+      <li>Samedi : marche ou natation</li>
+      <li>Dimanche : repos</li>
+    </ul>
+  </div>
 
-<!-- CASES -->
-<div class="container">
-
-<div class="box">
-<h3>déficit calorique</h3>
-<p>pour une bonne perte de gras tout commence dans ton alimentation<br>
-le principe d'un déficit calorique est de consommer moins de calories que tu n'en brûles.<br>
-pour cela il ne suffit pas de manger moins, mais aussi de choisir les bons aliments, ce qui contienne le moins de calories.<br>
-il faut egalement faire du sport pour brûler plus de calories comme du footing ou de la marche a pied.
-</p>
-</div>
-
-<div class="box">
-<h3>les meilleur spors pour bruler les calories</h3>
-<p>Les sports les plus efficaces pour brûler les calories sont le footing, la natation, le vélo, la marche a pied et la corde a sauter.<br>
-d'après les études, les spors qui font perdre le plus de collories sont ceux qui maintienne une frecance<br>
-cardiaque élevée car une fraicanse trop elevée brule trés peu de calories et au contraire une frécance<br>
-trop basse n'en brûle pas beaucoup non plus</p>
-</div>
-
-<div class="box">
-<h3>Conseils sur une semaine</h3>
-<p>sur une semaine je te conseille de faire une activiter intence tout les deux jours et un moin intansse entre.</p>
-<h3>exemple</h3>
-<ul>
-<li>lundi : footing (le temps que tu peux mais un maximum)</li>
-<li>mardi : marche a pied de 30 minutes voire une heure</li>
-<li>mercredi : footing ou velo ( toujour un maximum possible)</li>
-<li>jeudi : de la marche ou de la nataion </li>
-<li>vendredi : footing ou velo (toujour un maximum possible)</li>
-<li>samedi : de la marche ou de la nataion </li>
-<li>dimanche : repos</li>
-</ul>
-</div>
-
-<div class="box">
-<h3>Conseils nutrition</h3>
-<p>La perte de gras repose sur un équilibre entre l’alimentation, l’activité physique et la régularité.
-     Il ne s’agit pas de faire un régime extrême, mais d’adopter de bonnes habitudes sur le long terme.
-      Le plus important est de rester constant et de progresser petit à petit. Mais surtout de néglige pas le someil
-    car un bon sommeil est essentiel pour que ton corp rcupére aprés l'effort.</p>
-</div>
+  <div class="box">
+    <h3>Nutrition</h3>
+    <p>
+      La clé est la régularité. Mange équilibré, dors bien et évite les excès.
+      Le sommeil est essentiel pour récupérer et progresser.
+    </p>
+  </div>
 
 </div>
 
 </body>
 </html>
- 
