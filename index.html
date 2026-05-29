@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Basket Performance Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter",sans-serif;
+}
+
+body{
+  background:#0b0f17;
+  color:white;
+}
+
+/* MENU HAMBURGER */
+
+.menu-icon{
+  position:fixed;
+  top:15px;
+  left:15px;
+  font-size:30px;
+  cursor:pointer;
+  z-index:1001;
+}
+
+.menu{
+  position:fixed;
+  top:60px;
+  left:15px;
+  background:#111827;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:10px;
+  display:none;
+  flex-direction:column;
+  z-index:1000;
+  min-width:220px;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  padding:12px;
+  border-radius:8px;
+  transition:0.2s;
+}
+
+.menu a:hover{
+  background:#ff6b00;
+  color:black;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:radial-gradient(circle at top,#1a2235,#0b0f17);
+  padding:20px;
+}
+
+.hero h1{
+  font-size:64px;
+  font-weight:800;
+}
+
+.hero span{
+  color:#ff6b00;
+}
+
+.hero p{
+  margin-top:15px;
+  color:#aaa;
+  max-width:700px;
+  line-height:1.6;
+}
+
+/* SECTION */
+
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h2{
+  margin-bottom:20px;
+  font-size:28px;
+}
+
+.card{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:14px;
+  padding:20px;
+  margin-bottom:20px;
+  line-height:1.7;
+}
+
+ul{
+  margin-top:10px;
+  margin-left:20px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:#666;
+}
+
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1588147138636256"
+crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<div class="menu-icon" onclick="toggleMenu()">
+☰
+</div>
+
+<div class="menu" id="menu">
+
+  <a href="pertedegras.html">Perte de gras</a>
+
+  <a href="developpementmusculaire.html">Développement musculaire</a>
+
+  <a href="#contact">Contact</a>
+
+  <a href="#privacy">Confidentialité</a>
+
+  <a href="#about">À propos</a>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1 style="font-size:clamp(32px, 8vw, 64px);">
+  BASKET <span style="color:#ff6b00;">PERFORMANCE</span>
+</h1>
+
+<p>
+Préparation physique et technique pour progresser au basket.
+Améliore ton explosivité, ta vitesse, ton dribble et ton physique
+avec des entraînements adaptés à tes objectifs.
+</p>
+
+</div>
+
+<section style="max-width:1000px; margin:auto; padding:60px 20px;">
+
+<h2 style="text-align:center; margin-bottom:20px;color:#ff6b00;">
+Bienvenue
+</h2>
+
+<div class="card">
+
+<p>
+vous vouler changer vos conditions, physiques alors vous etes au bon endroit.
+Vous trouverer des conseils pour le developpement musculaire, et la perte de gras.
+Quelque soit votre niveau vous trouverer des conseils pour progresser, et atteindre vos objectifs.
+Si vous avez des questions, des suggestions, ou besoin d'un suivis encore plus personnalisé, n'hesitez pas a nous contacter.
+</p>
+
+</div>
+
+</section>
+<!-- PREMIUM -->
+
+<section id="premium">
+
+<h2>Suivi personnalisé 🔒</h2>
+
+<div class="card">
+
+<p>
+Le suivi personnalisé permettra bientôt d’obtenir :
+</p>
+
+<ul>
+<li>Programmes adaptés à ton niveau</li>
+<li>Conseils personnalisés</li>
+<li>Suivi des performances</li>
+<li>Coaching plus avancé</li>
+</ul>
+
+<p style="margin-top:15px;color:#ff6b00;">
+Disponible prochainement.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- A PROPOS -->
+
+<section id="about">
+
+<h2>À propos</h2>
+
+<div class="card">
+
+<p>
+Basket Performance Hub est un site dédié à la préparation physique
+et technique des joueurs de basket.
+</p>
+
+<p>
+L’objectif est d’aider les sportifs à améliorer leur vitesse,
+leur explosivité, leur endurance et leur technique grâce à des
+entraînements simples et efficaces.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+Vous pouvez nous contacter pour des questions ou suggestions :
+</p>
+
+<p style="margin-top:10px;">
+Email : basket1hib@gmail.com
+</p>
+
+</div>
+
+</section>
+
+<!-- CONFIDENTIALITE -->
+
+<section id="privacy">
+
+<h2>Politique de confidentialité</h2>
+
+<div class="card">
+
+<p>
+Ce site ne collecte pas directement de données personnelles sensibles.
+</p>
+
+<p>
+Des outils tiers comme Google AdSense peuvent utiliser des cookies
+pour améliorer l’expérience utilisateur et afficher des publicités adaptées.
+</p>
+
+<p>
+En utilisant ce site, vous acceptez l’utilisation de ces technologies.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+hub preformance © 2026
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+  const menu = document.getElementById("menu");
+
+  if(menu.style.display === "flex"){
+    menu.style.display = "none";
+  }else{
+    menu.style.display = "flex";
+  }
+
+}
+
+</script>
+
+</body>
+</html>
